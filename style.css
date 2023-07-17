@@ -45,10 +45,10 @@ header {
 }
 
 .nav-menu {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 26px;
-    padding-left: 50px;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -89,4 +89,38 @@ nav li a {
     width: 100%;
     border-radius: 8px;
     margin-top: 50px;
+}
+
+/* responsive styles */
+
+/* small devices */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-top: 20px;
+    }
+}
+
+/* medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
+        padding: 40px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-top: 20px;
+    }
 }
