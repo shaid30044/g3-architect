@@ -94,7 +94,6 @@ nav li a {
 
 .feature {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 80px 240px;
 }
@@ -153,6 +152,19 @@ nav li a {
     nav ul {
         padding-top: 20px;
     }
+
+    .feature {
+        margin: 40px 20px;
+        flex-direction: column;
+    }
+
+    .feature-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-content {
+        margin: 20px;
+    }
 }
 
 /* medium devices */
@@ -168,5 +180,18 @@ nav li a {
 
     nav ul {
         padding-top: 20px;
+    }
+
+    .feature {
+        margin: 40px;
+        flex-direction: column;
+    }
+
+    .feature-img-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-content {
+        margin: 20px;
     }
 }
